@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"music_1\startup_stm32f407xx.o"
+"music_1\main.o"
+"music_1\gpio.o"
+"music_1\tim.o"
+"music_1\stm32f4xx_it.o"
+"music_1\stm32f4xx_hal_msp.o"
+"music_1\stm32f4xx_hal_tim.o"
+"music_1\stm32f4xx_hal_tim_ex.o"
+"music_1\stm32f4xx_hal_rcc.o"
+"music_1\stm32f4xx_hal_rcc_ex.o"
+"music_1\stm32f4xx_hal_flash.o"
+"music_1\stm32f4xx_hal_flash_ex.o"
+"music_1\stm32f4xx_hal_flash_ramfunc.o"
+"music_1\stm32f4xx_hal_gpio.o"
+"music_1\stm32f4xx_hal_dma_ex.o"
+"music_1\stm32f4xx_hal_dma.o"
+"music_1\stm32f4xx_hal_pwr.o"
+"music_1\stm32f4xx_hal_pwr_ex.o"
+"music_1\stm32f4xx_hal_cortex.o"
+"music_1\stm32f4xx_hal.o"
+"music_1\stm32f4xx_hal_exti.o"
+"music_1\system_stm32f4xx.o"
+--strict --scatter "music_1\music_1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "music_1.map" -o music_1\music_1.axf
